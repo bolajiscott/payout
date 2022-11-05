@@ -119,27 +119,13 @@ function PaymentPage() {
   return (
     <div className="mt-10 md:mt-20 w-[95%] md:w-2/5 bg-slate-900 p-3 py-10 md:px-5 mx-auto">
       <div>
-        <h1 className="text-center text-white mb-5">MAKE PAYMENT</h1>
+        <h1 className="text-center text-white mb-5">
+          ADD NEXT OF KIN BENEFICIARIES
+        </h1>
         <div className="md:flex gap-3 md:px-10">
-          <div className="mx-auto md:w-1/3 items-center gap-5 justify-center flex-wrap">
-            <label className="text-white block " htmlFor="reciepient">
-              Method
-            </label>
-            <select
-              onChange={(e) => changeHandler(e)}
-              className={`block w-full h-10 flex-1 mx-auto max-w-full bg-gray-600 outline-0 focus:bg-slate-900 outline px-5 text-white   focus:outline-1 focus:outline-red-400 border-0 rounded`}
-              id="asset"
-              name="method"
-              value={formValue.method}
-            >
-              <option value={"username"}>Username</option>
-              <option value={"twitter"}>Twitter</option>
-              <option value={"email"}>Email</option>
-            </select>
-          </div>
           <div className="mx-auto md:flex-1 items-center gap-5 justify-center flex-wrap ">
-            <label className="text-white block " htmlFor="reciepient">
-              Username:
+            <label className="text-white block " htmlFor="reciepient ">
+              Address Of Next Of Kin:
             </label>
             <Input
               onChange={(e) => changeHandler(e)}
@@ -180,19 +166,7 @@ function PaymentPage() {
             </select>
           </div>
         </div>
-        <div className="gap-5 mt-5 items-center md:px-10 flex-wrap md:gap-5">
-          <label className="text-white block" htmlFor="note">
-            Note
-          </label>
-          <textarea
-            onChange={(e) => changeHandler(e)}
-            rows="3"
-            className={`flex-1 w-full mx-auto max-w-full bg-gray-600 outline-0 focus:bg-slate-900 outline px-5 text-white   focus:outline-1 focus:outline-red-400 border-0 rounded`}
-            id="note"
-            name="note"
-            value={formValue.note}
-          ></textarea>
-        </div>
+
         <div className="md:px-10">
           {wallet ? (
             <Button

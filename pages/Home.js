@@ -17,8 +17,8 @@ const Home = () => {
             </span>
           </p>
           <Link
-            to="./pay"
-            className="inline-block text-white mt-3 bg-red-600 px-5 py-2 rounded"
+            to="./GetStarted"
+            className="inline-block text-white mt-3 bg-green-600 px-5 py-2 rounded"
           >
             Get started
           </Link>
