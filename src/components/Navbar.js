@@ -30,7 +30,7 @@ function Navbar() {
     >
       <a className="text-xl font-bold" href="/">
         {" "}
-        Payout 🚀
+        Payout
       </a>
       <AiOutlineBars
         className="text-lg md:hidden "
@@ -38,6 +38,7 @@ function Navbar() {
       />
       <div className="md:flex hidden items-center gap-3">
         <Link to="pay">Payment</Link>
+        <Link to="profile">Profile</Link>
         {!isConnected ? (
           <Button
             className={"gap-1"}
