@@ -77,6 +77,8 @@ function Navbar() {
         />
         <Link to="pay">Payment</Link>
         <Link to="profile">Profile</Link>
+        <Link to="getstarted">Getstarted</Link>
+
         {!isConnected ? (
           <Button
             className={"gap-1"}

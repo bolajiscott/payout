@@ -4,6 +4,7 @@ import AppContainer from "./pages/AppContainer";
 import WalletProvider from "./providers/WalletProvider";
 import PaymentPage from "./pages/PaymentPage";
 import ProfilePage from "./pages/ProfilePage";
+import GetStarted from "./pages/GetStarted";
 import ProfileProvider from "./providers/ProfileProvider";
 import Home from "./pages/Home";
 import ContractProvider from "./providers/ContractProvider";
@@ -18,7 +19,7 @@ function App() {
               <Route element={<AppContainer />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/pay" element={<PaymentPage />} />
-                <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/getstarted" element={<GetStarted />} />
               </Route>
             </Routes>
           </div>
