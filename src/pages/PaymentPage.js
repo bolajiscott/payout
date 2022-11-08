@@ -125,7 +125,7 @@ function PaymentPage() {
         <div className="md:flex gap-3 md:px-10">
           <div className="mx-auto md:flex-1 items-center gap-5 justify-center flex-wrap ">
             <label className="text-white block " htmlFor="reciepient ">
-              Address Of Next Of Kin:
+              AddressOfNextOfKin:
             </label>
             <Input
               onChange={(e) => changeHandler(e)}
