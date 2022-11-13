@@ -38,7 +38,6 @@ function Navbar() {
       />
       <div className="md:flex hidden items-center gap-3">
         <Link to="pay">Payment</Link>
-        <Link to="profile">Profile</Link>
         {!isConnected ? (
           <Button
             className={"gap-1"}
